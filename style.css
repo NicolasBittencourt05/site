@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+button {
+  width: 300px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-container label {
+  display: inline;
+  margin: 0;
+}

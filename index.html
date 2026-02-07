@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="pt-br">
-  <head> 
-   
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>Document</title>
-    
   </head>
   <body>
     <header>
@@ -23,44 +21,91 @@
 
     <section>
       <h2 id="Sobre mim">Sobre mim</h2>
-      <img
-        src="IMG_20250105_144945_340.webp"
-        alt=""
-        width="250"
-        height="250"
-      />
+      <img src="IMG_20250105_144945_340.webp" alt="" width="250" height="250" />
       <article>
         <p>Sou o Nicolas e busco uma oportunidade na área de tecnologia.</p>
-      </article>
+      </article> 
 
-      <aside>
-        <h3>Habilidades</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </aside>
+    </section> 
+
+    <section id="habilidades">
+
+      <h2>Tecnologias e níveis</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tecnologia</th> 
+            <th>Nível</th> 
+            <th>Descrição</th>
+          </tr>
+        </thead> 
+
+        <tbody>
+          <tr></tr>
+            <td>HTML</td>
+            <td>Intermediário</td>
+            <td>Conhecimento básico de marcação e estruturação de páginas web.</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Intermediário</td>
+            <td>Capacidade de estilizar páginas web com layout responsivo.</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Básico</td>
+            <td>Conhecimento básico de programação funcional e manipulação do DOM.</td>
+          </tr>
+        </tbody>
+      </table>
+
     </section>
 
-      <section>
-        <h2 id="Projetos" >Projetos</h2>
-        <article>
-          <ul>
-            <li>Projeto X</li>
-            <li>Projeto Y</li>
-          </ul>
-        </article>
-      </section>
-
+    <section>
+      <h2 id="Projetos">Projetos</h2>
+      <article>
+        <ul>
+          <li>Projeto X</li>
+          <li>Projeto Y</li>
+        </ul>
+      </article>
+    </section>
 
     <footer>
       <p>Direitos reservados a Nicolas</p>
       <section>
         <h2 id="Contato">Contato</h2>
-        <address>
-          Email: <a href="mailto:nico@nico.com">nico@nico.com</a>
-        </address>
+        <p>Deseja entrar em contato? Preencha os campos abaixo!</p>
+        <br />
+
+        <form action="">
+          <label for="nome">Nome: </label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telefone">Telefone: </label>
+          <input type="tel" name="telefone" id="telefone" required />
+
+          <label for="assunto">Assunto</label>
+
+          <select name="assunto" id="assunto">
+            <option value="orcamento">Orçamento</option>
+            <option value="duvida">Dúvida:</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <label for="textarea">Mensagem:</label>
+          <textarea name="mensagem" id="textarea"></textarea>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <label for="checkbox">Deseja receber notificações?</label>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
       </section>
     </footer>
   </body>
